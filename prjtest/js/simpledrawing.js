@@ -21,7 +21,7 @@
    // adding new shape to canvas
    stage.on("stagemousedown",function(evt) {
      start = true;
- 	 drawing[i] = new createjs.Shape();
+     drawing[i] = new createjs.Shape();
      stage.addChild(drawing[i]);
    })
 			
@@ -34,16 +34,16 @@
    stage.on("stagemousemove",function(evt) {
 			 
      if(oX && start){
-	   drawing[i].graphics.beginStroke(color)
-                          .setStrokeStyle(size,"round")
-                          .moveTo(oX,oY)
-                          .lineTo(evt.stageX,evt.stageY);
+	drawing[i].graphics.beginStroke(color)
+                           .setStrokeStyle(size,"round")
+                           .moveTo(oX,oY)
+                           .lineTo(evt.stageX,evt.stageY);
 				 
         stage.update();	
       }	
       oX = evt.stageX;
       oY = evt.stageY;				   
-	  })
+    })
 	      
      this.document.onkeydown = keydown;
 
