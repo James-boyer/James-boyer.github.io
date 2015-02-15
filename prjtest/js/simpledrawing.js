@@ -28,7 +28,7 @@
 
    stage.on("stagemouseup",function(evt) {
      start = false;
-	 i++;
+     i++;
    })
 			
    stage.on("stagemousemove",function(evt) {
