@@ -6,7 +6,7 @@
  //removes previous drawing
    if(event.keyCode == LeftArrow){
      stage.removeChild(drawing[i - 1]);
-	 i--;
+     i--;
    }
    stage.update();
  }
@@ -25,7 +25,7 @@
      stage.addChild(drawing[i]);
    })
 			
-			// moving on
+
    stage.on("stagemouseup",function(evt) {
      start = false;
 	 i++;
