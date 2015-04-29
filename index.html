@@ -1,1 +1,18 @@
-hello humans
+<!doctype html>
+<html>
+<head>
+</head>
+<body onload = "init();">
+
+<script src = "https://github.com/GoodBoyDigital/pixi.js/bin/pixi.js"></script>
+<script>
+  function init(){
+    var stage = new PIXI.Stage(0xFF00FF);
+	
+	var renderer = PIXI.autoDetectRenderer(512,384);
+	document.body.appendChild(renderer.view);
+	renderer.render(stage);
+  };
+</script>
+</body>
+</html>
