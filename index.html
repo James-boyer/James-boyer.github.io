@@ -26,33 +26,33 @@
 	// add the renderer view element to the DOM
 	document.body.appendChild(renderer.view);
 
-//	requestAnimFrame( animate );
+	requestAnimFrame( animate );
 
 	// create a texture from an image path
-//	var texture = PIXI.Texture.fromImage("bunny.png");
+	var texture = PIXI.Texture.fromImage("clip.png");
 	// create a new Sprite using the texture
-//	var bunny = new PIXI.Sprite(texture);
+	var clip= new PIXI.Sprite(texture);
 
 	// center the sprites anchor point
-//	bunny.anchor.x = 0.5;
-//	bunny.anchor.y = 0.5;
+	  clip.anchor.x = 0.5;
+	  clip.anchor.y = 0.5;
 
 	// move the sprite t the center of the screen
-//	bunny.position.x = 200;
-//	bunny.position.y = 150;
+	clip.position.x = 200;
+	clip.position.y = 150;
 
-//	stage.addChild(bunny);
+	stage.addChild(clip);
 
-	//function animate() {
+	function animate() {
 
-	 //   requestAnimFrame( animate );
+	    requestAnimFrame( animate );
 
 	    // just for fun, lets rotate mr rabbit a little
-	    bunny.rotation += 0.1;
+	    clip.rotation += 0.1;
 
 	    // render the stage
 	    renderer.render(stage);
-//	}
+	}
 
 	</script>
   </body>
