@@ -2,13 +2,13 @@
 <html>
 <head>
 	
-		<script src="https://raw.githubusercontent.com/GoodBoyDigital/pixi.js/master/bin/pixi.min.js"></script>
+		<script src="https://raw.githubusercontent.com/GoodBoyDigital/pixi.js/master/bin/pixi.js"></script>
 	
 <script>
   function init(){
 
     
-	var stage = new Stage(0x555555);
+	var stage = new PIXI.Stage(0x555555);
 	var renderer = PIXI.autoDetectRenderer(512,384);
 	document.body.appendChild(renderer.view);
   	renderer.render(stage);
