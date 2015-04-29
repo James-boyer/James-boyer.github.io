@@ -13,7 +13,7 @@
  function init() {
    stage = new createjs.Stage("demoCanvas");
    stage.enableDOMEvents(true);
-   color = "#0FF";
+   color = "#F0F";
    size = 5;
    start = false;
    i = 0;
