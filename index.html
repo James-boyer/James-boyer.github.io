@@ -10,13 +10,12 @@
 <p>test</p>
 <script>
   function init(){
-  	requestAnimFrame(animate);
 
     var stage = new PIXI.Stage(0xff00ff);
 	
 	var renderer = PIXI.autoDetectRenderer(512,384);
 	document.body.appendChild(renderer.view);
-	renderer.render(stage);
+  	requestAnimFrame(animate);
   }
   function animate() {
 
