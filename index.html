@@ -1,19 +1,28 @@
 <!doctype html>
 <html>
 <head>
-	<script src = "https://github.com/GoodBoyDigital/pixi.js/bin/pixi.js"></script>
+	
+		<script src="https://github.com/GoodBoyDigital/pixi.js/bin/pixi.dev.js"></script>
+	<script src="pixi.dev.js"></script>
+
+</head>
+<body onload = "init();">
+<p>test</p>
 <script>
   function init(){
-    var stage = new PIXI.Stage(0xFF00FF);
+  	requestAnimFrame(animate);
+
+    var stage = new PIXI.Stage(0xff00ff);
 	
 	var renderer = PIXI.autoDetectRenderer(512,384);
 	document.body.appendChild(renderer.view);
 	renderer.render(stage);
-  };
-</script>
-</head>
-<body onload = "init();">
-<p>test</p>
+  }
+  function animate() {
 
+	    renderer.render(stage);
+	    requestAnimFrame(animate);
+	}
+</script>
 </body>
 </html>
